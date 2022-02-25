@@ -15,7 +15,11 @@ export default function Navbar() {
           <div className="w-1/2 mx-2">
             <div className="flex justify-between">
               {menuNavbar.map((item, index) => {
-                return <h2 className="text-primary-dark text-lg">{item}</h2>;
+                return (
+                  <h2 key={index} className="text-primary-dark text-lg">
+                    {item}
+                  </h2>
+                );
               })}
             </div>
           </div>
